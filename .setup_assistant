@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: motoman_gp12_support
+    relative_path: urdf/gp12.urdf
+  srdf:
+    relative_path: config/motoman_gp12.srdf
+  package_settings:
+    author_name: Jimmy McElwain
+    author_email: jimmy.mcelwain@motoman.com
+    generated_timestamp: 1728479972
