@@ -47,21 +47,12 @@ def generate_launch_description():
             moveit_config.planning_pipelines,
             moveit_config.joint_limits,
         ],
-      )
+      )      
 
-      # Static TF
-      static_tf_node = Node(
-        package="tf2_ros",
-        executable="static_transform_publisher",
-        name="static_transform_publisher",
-        output="log",
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "world", "group_1/base_link"],
-      )
       
       return LaunchDescription(
         [
-              move_group_node,
-              rviz_node,
-              static_tf_node,
+          move_group_node, 
+          rviz_node, 
         ]
       )
